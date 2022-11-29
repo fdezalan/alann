@@ -19,20 +19,18 @@ function user () {
         }
         else if (pass === contrasenia){
             alert("Sea usted bienvenido" + " "+ nombre1)
+            alert("le solicitamos un cambio de usuario, por favor ingreselo")
+            let usuarioConEmail2 = prompt("Ingresa Nuevo Usuario")
+        
+            for( let i = 0; usuarioConEmail2.length > i ; i) {
+                if(usuarioConEmail[i].includes("@")){
+                     alert ("siguiente paso")
+                }
+                else{
+                     alert("Ingrese un Email con @")
+                }
+            }
         }
-    }
-}
-const pass = "HolaBuenasNoches"
-if (pass === contrasenia){
-    function arrob () {
-        const arroba = /@/
-        alert("Por Favor le solicitamos que cambie su Usuario por un Email")
-        let usuarioConEmail = prompt ("Ingrese su nuevo Email aqui")
-        if (usuarioConEmail != arroba(/@/)) {
-            alert("Su Usuario no contiene @")
-        }
-
-
     }
 }
 
