@@ -13,16 +13,29 @@ function user () {
     }
     else if( usuario === usuarioConEmail) {
         alert("Perfecto, Precede a ingresar tu pasguord")
+        const pass = prompt ("Ingrese su contraseña :")
+        if (pass != contrasenia){
+            alert("Contraseña Incorrecta!, Intente de nuevo.")
+        }
+        else if (pass === contrasenia){
+            alert("Sea usted bienvenido" + " "+ nombre1)
+        }
     }
+}
+const pass = "HolaBuenasNoches"
+if (pass === contrasenia){
+    function arrob () {
+        const arroba = /@/
+        alert("Por Favor le solicitamos que cambie su Usuario por un Email")
+        let usuarioConEmail = prompt ("Ingrese su nuevo Email aqui")
+        if (usuarioConEmail != arroba(/@/)) {
+            alert("Su Usuario no contiene @")
+        }
 
-    const pass = prompt ("Ingrese su contraseña :")
-    if (pass != contrasenia){
-        alert("Contraseña Incorrecta!, Intente de nuevo.")
-    }
-    else if (pass === contrasenia){
-        alert("Sea usted bienvenido" + " "+ nombre1)
+
     }
 }
 
 
 user () 
+arrob ()
